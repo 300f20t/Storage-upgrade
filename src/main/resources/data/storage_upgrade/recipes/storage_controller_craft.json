@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_block"
+    },
+    "b": {
+      "item": "minecraft:amethyst_block"
+    },
+    "c": {
+      "item": "minecraft:diamond_block"
+    }
+  },
+  "result": {
+    "item": "storage_upgrade:storage_controller",
+    "count": 1
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "storage_upgrade:basic_storage",
+    "storage_upgrade:storage_controller",
+    "storage_upgrade:storage_input",
+    "storage_upgrade:storage_output"
+  ]
+}

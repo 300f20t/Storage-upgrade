@@ -1,0 +1,82 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Write \"/help\" for help.",
+          "name": "commandPrompt",
+          "width": 120,
+          "height": 20,
+          "x": 126,
+          "y": 16
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_enter",
+          "text": "Enter",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "CommandHandler"
+          },
+          "width": 51,
+          "height": 20,
+          "x": 252,
+          "y": 16
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_execution_result",
+          "text": {
+            "fixedValue": "Execution result:"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 126,
+          "y": 44
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty",
+          "text": {
+            "fixedValue": "",
+            "name": "CommandResult"
+          },
+          "color": {
+            "value": -205,
+            "falpha": 0.0
+          },
+          "x": 126,
+          "y": 56
+        }
+      }
+    ],
+    "onTick": {
+      "name": "CommandResult"
+    },
+    "gridSettings": {
+      "sx": 12,
+      "sy": 12,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

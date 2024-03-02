@@ -1,0 +1,57 @@
+{
+  "variants": {
+    "face=floor,facing=north": {
+      "model": "storage_upgrade:custom/display_particle"
+    },
+    "face=floor,facing=east": {
+      "model": "storage_upgrade:custom/display_particle",
+      "y": 90
+    },
+    "face=floor,facing=south": {
+      "model": "storage_upgrade:custom/display_particle",
+      "y": 180
+    },
+    "face=floor,facing=west": {
+      "model": "storage_upgrade:custom/display_particle",
+      "y": 270
+    },
+    "face=wall,facing=north": {
+      "model": "storage_upgrade:custom/display_particle",
+      "x": 90
+    },
+    "face=wall,facing=east": {
+      "model": "storage_upgrade:custom/display_particle",
+      "x": 90,
+      "y": 90
+    },
+    "face=wall,facing=south": {
+      "model": "storage_upgrade:custom/display_particle",
+      "x": 90,
+      "y": 180
+    },
+    "face=wall,facing=west": {
+      "model": "storage_upgrade:custom/display_particle",
+      "x": 90,
+      "y": 270
+    },
+    "face=ceiling,facing=north": {
+      "model": "storage_upgrade:custom/display_particle",
+      "x": 180,
+      "y": 180
+    },
+    "face=ceiling,facing=east": {
+      "model": "storage_upgrade:custom/display_particle",
+      "x": 180,
+      "y": 270
+    },
+    "face=ceiling,facing=south": {
+      "model": "storage_upgrade:custom/display_particle",
+      "x": 180
+    },
+    "face=ceiling,facing=west": {
+      "model": "storage_upgrade:custom/display_particle",
+      "x": 180,
+      "y": 90
+    }
+  }
+}

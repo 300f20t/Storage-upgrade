@@ -1,0 +1,28 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:BasicStorage"
+      },
+      {
+        "value": "CUSTOM:StorageController"
+      },
+      {
+        "value": "CUSTOM:StorageInput"
+      },
+      {
+        "value": "CUSTOM:StorageOutput"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "su_block",
+    "namespace": "forge"
+  }
+}

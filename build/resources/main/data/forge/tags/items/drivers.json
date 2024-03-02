@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "storage_upgrade:command_driver",
+    "storage_upgrade:cells_driver"
+  ]
+}

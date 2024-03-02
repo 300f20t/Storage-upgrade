@@ -1,0 +1,738 @@
+{
+  "mod_elements": [
+    {
+      "name": "BasicStorage",
+      "type": "animatedblock",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basic_storage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/storageupgrade/block/display/BasicStorageDisplayItem.java",
+          "src/main/java/net/mcreator/storageupgrade/block/renderer/BasicStorageDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/storageupgrade/block/model/BasicStorageBlockModel.java",
+          "src/main/java/net/mcreator/storageupgrade/block/entity/BasicStorageTileEntity.java",
+          "src/main/java/net/mcreator/storageupgrade/block/BasicStorageBlock.java",
+          "src/main/resources/assets/storage_upgrade/blockstates/basic_storage.json",
+          "src/main/java/net/mcreator/storageupgrade/block/renderer/BasicStorageTileRenderer.java",
+          "src/main/java/net/mcreator/storageupgrade/block/model/BasicStorageDisplayModel.java",
+          "src/main/resources/assets/storage_upgrade/models/item/basic_storage.json",
+          "src/main/resources/assets/storage_upgrade/models/custom/basic_storage_particle.json"
+        ]
+      }
+    },
+    {
+      "name": "StorageController",
+      "type": "animatedblock",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "storage_controller",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/storage_upgrade/blockstates/storage_controller.json",
+          "src/main/java/net/mcreator/storageupgrade/block/renderer/StorageControllerTileRenderer.java",
+          "src/main/java/net/mcreator/storageupgrade/block/renderer/StorageControllerDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/storageupgrade/block/model/StorageControllerBlockModel.java",
+          "src/main/java/net/mcreator/storageupgrade/block/display/StorageControllerDisplayItem.java",
+          "src/main/java/net/mcreator/storageupgrade/block/StorageControllerBlock.java",
+          "src/main/java/net/mcreator/storageupgrade/block/entity/StorageControllerTileEntity.java",
+          "src/main/java/net/mcreator/storageupgrade/block/model/StorageControllerDisplayModel.java",
+          "src/main/resources/assets/storage_upgrade/models/custom/storage_controller_particle.json",
+          "src/main/resources/assets/storage_upgrade/models/item/storage_controller.json"
+        ]
+      }
+    },
+    {
+      "name": "StorageInput",
+      "type": "animatedblock",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "storage_input",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/storageupgrade/block/StorageInputBlock.java",
+          "src/main/java/net/mcreator/storageupgrade/block/renderer/StorageInputDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/storageupgrade/block/renderer/StorageInputTileRenderer.java",
+          "src/main/java/net/mcreator/storageupgrade/block/model/StorageInputBlockModel.java",
+          "src/main/java/net/mcreator/storageupgrade/block/model/StorageInputDisplayModel.java",
+          "src/main/java/net/mcreator/storageupgrade/block/entity/StorageInputTileEntity.java",
+          "src/main/resources/assets/storage_upgrade/models/item/storage_input.json",
+          "src/main/resources/assets/storage_upgrade/models/custom/storage_input_particle.json",
+          "src/main/resources/assets/storage_upgrade/blockstates/storage_input.json",
+          "src/main/java/net/mcreator/storageupgrade/block/display/StorageInputDisplayItem.java"
+        ]
+      }
+    },
+    {
+      "name": "StorageOutput",
+      "type": "animatedblock",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "storage_output",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/storage_upgrade/models/item/storage_output.json",
+          "src/main/java/net/mcreator/storageupgrade/block/model/StorageOutputDisplayModel.java",
+          "src/main/resources/assets/storage_upgrade/blockstates/storage_output.json",
+          "src/main/java/net/mcreator/storageupgrade/block/renderer/StorageOutputDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/storageupgrade/block/display/StorageOutputDisplayItem.java",
+          "src/main/java/net/mcreator/storageupgrade/block/StorageOutputBlock.java",
+          "src/main/java/net/mcreator/storageupgrade/block/entity/StorageOutputTileEntity.java",
+          "src/main/java/net/mcreator/storageupgrade/block/model/StorageOutputBlockModel.java",
+          "src/main/java/net/mcreator/storageupgrade/block/renderer/StorageOutputTileRenderer.java",
+          "src/main/resources/assets/storage_upgrade/models/custom/storage_output_particle.json"
+        ]
+      }
+    },
+    {
+      "name": "SUBlock",
+      "type": "tag",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "su_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forge/tags/blocks/su_block.json"
+        ]
+      },
+      "path": "~/Tags"
+    },
+    {
+      "name": "BasicStoragePriIzmienieniiSosiednieghoBloka",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basic_storage_pri_izmienienii_sosiedniegho_bloka",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/storageupgrade/procedures/BasicStoragePriIzmienieniiSosiednieghoBlokaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StorageInputPriIzmienieniiSosiednieghoBloka",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "storage_input_pri_izmienienii_sosiedniegho_bloka",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/storageupgrade/procedures/StorageInputPriIzmienieniiSosiednieghoBlokaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BasicStorageGUI",
+      "type": "gui",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basic_storage_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/storageupgrade/client/gui/BasicStorageGUIScreen.java",
+          "src/main/java/net/mcreator/storageupgrade/world/inventory/BasicStorageGUIMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "CommandResult",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "command_result",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/storageupgrade/procedures/CommandResultProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/CommandResults"
+    },
+    {
+      "name": "StorageOutputPriIzmienieniiSosiednieghoBloka",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "storage_output_pri_izmienienii_sosiedniegho_bloka",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/storageupgrade/procedures/StorageOutputPriIzmienieniiSosiednieghoBlokaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CommandHandler",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "command_handler",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/storageupgrade/procedures/CommandHandlerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CommandDriver",
+      "type": "item",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "command_driver",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/storageupgrade/item/CommandDriverItem.java",
+          "src/main/resources/assets/storage_upgrade/models/item/command_driver.json"
+        ]
+      },
+      "path": "~/Drivers"
+    },
+    {
+      "name": "Drivers",
+      "type": "tag",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drivers",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forge/tags/items/drivers.json"
+        ]
+      },
+      "path": "~/Tags"
+    },
+    {
+      "name": "StorageCell",
+      "type": "item",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "storage_cell",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/storage_upgrade/models/item/storage_cell.json",
+          "src/main/java/net/mcreator/storageupgrade/item/StorageCellItem.java"
+        ]
+      },
+      "path": "~/Cells"
+    },
+    {
+      "name": "DataCell",
+      "type": "item",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "data_cell",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/storage_upgrade/models/item/data_cell.json",
+          "src/main/java/net/mcreator/storageupgrade/item/DataCellItem.java"
+        ]
+      },
+      "path": "~/Cells"
+    },
+    {
+      "name": "Cells",
+      "type": "tag",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cells",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forge/tags/items/cells.json"
+        ]
+      },
+      "path": "~/Tags"
+    },
+    {
+      "name": "CellsDriver",
+      "type": "item",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cells_driver",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/storage_upgrade/models/item/cells_driver.json",
+          "src/main/java/net/mcreator/storageupgrade/item/CellsDriverItem.java"
+        ]
+      },
+      "path": "~/Drivers"
+    },
+    {
+      "name": "StorageUpgrade",
+      "type": "tab",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "storage_upgrade",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "StorageInputGUI",
+      "type": "gui",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "storage_input_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/storageupgrade/world/inventory/StorageInputGUIMenu.java",
+          "src/main/java/net/mcreator/storageupgrade/client/gui/StorageInputGUIScreen.java",
+          "src/main/java/net/mcreator/storageupgrade/network/StorageInputGUISlotMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "StorageOutputGUI",
+      "type": "gui",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "storage_output_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/storageupgrade/world/inventory/StorageOutputGUIMenu.java",
+          "src/main/java/net/mcreator/storageupgrade/client/gui/StorageOutputGUIScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "Display",
+      "type": "animatedblock",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "display",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/storageupgrade/block/display/DisplayDisplayItem.java",
+          "src/main/java/net/mcreator/storageupgrade/block/DisplayBlock.java",
+          "src/main/java/net/mcreator/storageupgrade/block/renderer/DisplayDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/storageupgrade/block/model/DisplayDisplayModel.java",
+          "src/main/resources/assets/storage_upgrade/models/item/display.json",
+          "src/main/java/net/mcreator/storageupgrade/block/model/DisplayBlockModel.java",
+          "src/main/java/net/mcreator/storageupgrade/block/renderer/DisplayTileRenderer.java",
+          "src/main/java/net/mcreator/storageupgrade/block/entity/DisplayTileEntity.java",
+          "src/main/resources/assets/storage_upgrade/blockstates/display.json",
+          "src/main/resources/assets/storage_upgrade/models/custom/display_particle.json"
+        ]
+      }
+    },
+    {
+      "name": "DisplayPriIzmienieniiSosiednieghoBloka",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "display_pri_izmienienii_sosiedniegho_bloka",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/storageupgrade/procedures/DisplayPriIzmienieniiSosiednieghoBlokaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DisplayGUI",
+      "type": "gui",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "display_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/storageupgrade/network/DisplayGUIButtonMessage.java",
+          "src/main/java/net/mcreator/storageupgrade/client/gui/DisplayGUIScreen.java",
+          "src/main/java/net/mcreator/storageupgrade/world/inventory/DisplayGUIMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "FluidCell",
+      "type": "item",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fluid_cell",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/storageupgrade/item/FluidCellItem.java",
+          "src/main/resources/assets/storage_upgrade/models/item/fluid_cell.json"
+        ]
+      },
+      "path": "~/Cells"
+    },
+    {
+      "name": "ItemInput",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "item_input",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/storageupgrade/procedures/ItemInputProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CellsCheck",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cells_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/storageupgrade/procedures/CellsCheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StorageCellCraft",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "storage_cell_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/storage_upgrade/recipes/storage_cell_craft.json"
+        ]
+      },
+      "path": "~/Crafts/Cells"
+    },
+    {
+      "name": "DataCellCraft",
+      "type": "recipe",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "data_cell_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/storage_upgrade/recipes/data_cell_craft.json"
+        ]
+      },
+      "path": "~/Crafts/Cells"
+    },
+    {
+      "name": "FluidCellCraft",
+      "type": "recipe",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fluid_cell_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/storage_upgrade/recipes/fluid_cell_craft.json"
+        ]
+      },
+      "path": "~/Crafts/Cells"
+    },
+    {
+      "name": "StorageControllerCraft",
+      "type": "recipe",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "storage_controller_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/storage_upgrade/recipes/storage_controller_craft.json"
+        ]
+      },
+      "path": "~/Crafts"
+    },
+    {
+      "name": "StorageOutputGUIPriOtkrytiiIntierfieisa",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "storage_output_gui_pri_otkrytii_intierfieisa",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/storageupgrade/procedures/StorageOutputGUIPriOtkrytiiIntierfieisaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.storage_upgrade.command_driver": "Command Driver",
+      "item.storage_upgrade.storage_cell": "Storage Cell",
+      "gui.storage_upgrade.display_gui.label_execution_result": "Execution result:",
+      "gui.storage_upgrade.basic_storage_gui.label_empty": "CommandResult:",
+      "block.storage_upgrade.storage_output": "Storage Output",
+      "block.storage_upgrade.display": "Display",
+      "block.storage_upgrade.basic_storage": "Basic Storage",
+      "gui.storage_upgrade.basic_storage_gui.label_cells": "Cells:",
+      "item.storage_upgrade.fluid_cell": "Fluid Cell",
+      "item_group.storage_upgrade.storage_upgrade": "Storage Upgrade",
+      "gui.storage_upgrade.storage_input_gui.label_input": "Input:",
+      "gui.storage_upgrade.display_gui.commandPrompt": "Write \"/help\" for help.",
+      "gui.storage_upgrade.basic_storage_gui.label_nothing": "Nothing.",
+      "gui.storage_upgrade.storage_input_gui.label_upgrades": "Upgrades:",
+      "block.storage_upgrade.storage_input": "Storage Input",
+      "gui.storage_upgrade.display_gui.button_enter": "Enter",
+      "gui.storage_upgrade.storage_output_gui.label_output": "Output:",
+      "gui.storage_upgrade.basic_storage_gui.CommandPrompt": "Write \"/help\" for help.",
+      "gui.storage_upgrade.basic_storage_gui.button_enter": "Enter",
+      "item.storage_upgrade.cells_driver": "Cells Driver",
+      "item.storage_upgrade.data_cell": "Data Cell",
+      "block.storage_upgrade.storage_controller": "Storage Controller",
+      "gui.storage_upgrade.basic_storage_gui.label_drivers": "Drivers:"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Drivers",
+        "children": []
+      },
+      {
+        "name": "Tags",
+        "children": []
+      },
+      {
+        "name": "Cells",
+        "children": []
+      },
+      {
+        "name": "WIP",
+        "children": []
+      },
+      {
+        "name": "CommandResults",
+        "children": []
+      },
+      {
+        "name": "Crafts",
+        "children": [
+          {
+            "name": "Cells",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "storage_upgrade",
+    "modName": "Storage upgrade",
+    "version": "0.0.1_alpha",
+    "author": "300f20t, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "MIT License",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "geckolib",
+      "jei"
+    ],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.storageupgrade",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300452316
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "storage_upgrade:displaysettings/model_basic_storage.item",
+  "textures": {
+    "particle": "storage_upgrade:block/particle"
+  }
+}

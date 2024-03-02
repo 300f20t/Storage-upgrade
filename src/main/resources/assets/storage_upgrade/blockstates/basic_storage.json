@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "storage_upgrade:custom/basic_storage_particle"
+    },
+    "facing=east": {
+      "model": "storage_upgrade:custom/basic_storage_particle",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "storage_upgrade:custom/basic_storage_particle",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "storage_upgrade:custom/basic_storage_particle",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "storage_upgrade:storage_cell",
+    "storage_upgrade:data_cell"
+  ]
+}

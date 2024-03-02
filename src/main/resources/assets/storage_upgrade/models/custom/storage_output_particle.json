@@ -1,0 +1,7 @@
+
+{
+  "parent": "storage_upgrade:displaysettings/storage_io_model.item",
+  "textures": {
+    "particle": "storage_upgrade:block/particle"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    "bdb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:gold_ingot"
+    },
+    "b": {
+      "item": "minecraft:iron_ingot"
+    },
+    "c": {
+      "item": "minecraft:lapis_lazuli"
+    },
+    "d": {
+      "item": "minecraft:amethyst_shard"
+    }
+  },
+  "result": {
+    "item": "storage_upgrade:fluid_cell",
+    "count": 1
+  }
+}
