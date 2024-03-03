@@ -75,16 +75,16 @@
       "registry_name": "storage_output",
       "metadata": {
         "files": [
-          "src/main/resources/assets/storage_upgrade/models/item/storage_output.json",
-          "src/main/java/net/mcreator/storageupgrade/block/model/StorageOutputDisplayModel.java",
-          "src/main/resources/assets/storage_upgrade/blockstates/storage_output.json",
           "src/main/java/net/mcreator/storageupgrade/block/renderer/StorageOutputDisplayItemRenderer.java",
-          "src/main/java/net/mcreator/storageupgrade/block/display/StorageOutputDisplayItem.java",
           "src/main/java/net/mcreator/storageupgrade/block/StorageOutputBlock.java",
-          "src/main/java/net/mcreator/storageupgrade/block/entity/StorageOutputTileEntity.java",
-          "src/main/java/net/mcreator/storageupgrade/block/model/StorageOutputBlockModel.java",
           "src/main/java/net/mcreator/storageupgrade/block/renderer/StorageOutputTileRenderer.java",
-          "src/main/resources/assets/storage_upgrade/models/custom/storage_output_particle.json"
+          "src/main/java/net/mcreator/storageupgrade/block/entity/StorageOutputTileEntity.java",
+          "src/main/resources/assets/storage_upgrade/models/custom/storage_output_particle.json",
+          "src/main/java/net/mcreator/storageupgrade/block/model/StorageOutputDisplayModel.java",
+          "src/main/java/net/mcreator/storageupgrade/block/display/StorageOutputDisplayItem.java",
+          "src/main/java/net/mcreator/storageupgrade/block/model/StorageOutputBlockModel.java",
+          "src/main/resources/assets/storage_upgrade/blockstates/storage_output.json",
+          "src/main/resources/assets/storage_upgrade/models/item/storage_output.json"
         ]
       }
     },

@@ -114,7 +114,7 @@
     "guiBoundTo": "StorageOutputGUI",
     "openGUIOnRightClick": true,
     "inventorySize": 9,
-    "inventoryStackSize": 64,
+    "inventoryStackSize": 1024,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
     "generateFeature": false,

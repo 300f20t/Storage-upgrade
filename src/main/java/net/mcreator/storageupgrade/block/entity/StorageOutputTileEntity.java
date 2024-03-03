@@ -129,7 +129,7 @@ public class StorageOutputTileEntity extends RandomizableContainerBlockEntity im
 
 	@Override
 	public int getMaxStackSize() {
-		return 64;
+		return 1024;
 	}
 
 	@Override
