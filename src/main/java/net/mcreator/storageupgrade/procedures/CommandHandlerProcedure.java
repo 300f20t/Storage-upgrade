@@ -108,72 +108,64 @@ public class CommandHandlerProcedure {
 						return -1;
 					}
 				}.getValue(world, BlockPos.containing(controllerX, controllerY, controllerZ), "storageOutputZ");
-				if (command.contains("auto")) {
-					if (!world.isClientSide()) {
-						BlockPos _bp = BlockPos.containing(x, y, z);
-						BlockEntity _blockEntity = world.getBlockEntity(_bp);
-						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putBoolean("auto", true);
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-					}
-					if (!world.isClientSide()) {
-						BlockPos _bp = BlockPos.containing(x, y, z);
-						BlockEntity _blockEntity = world.getBlockEntity(_bp);
-						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putString("lastCommand", "Done!");
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-					}
-				} else {
+				if (!world.isClientSide()) {
+					BlockPos _bp = BlockPos.containing(outputX, outputY, outputZ);
+					BlockEntity _blockEntity = world.getBlockEntity(_bp);
+					BlockState _bs = world.getBlockState(_bp);
+					if (_blockEntity != null)
+						_blockEntity.getPersistentData().putDouble("getItemCount", new Object() {
+							double convert(String s) {
+								try {
+									return Double.parseDouble(s.trim());
+								} catch (Exception e) {
+								}
+								return 0;
+							}
+						}.convert(command.replace(commandNoNumbers, "")));
+					if (world instanceof Level _level)
+						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+				}
+				if (!world.isClientSide()) {
+					BlockPos _bp = BlockPos.containing(outputX, outputY, outputZ);
+					BlockEntity _blockEntity = world.getBlockEntity(_bp);
+					BlockState _bs = world.getBlockState(_bp);
+					if (_blockEntity != null)
+						_blockEntity.getPersistentData().putString("receivedItem", ((((command).strip().substring(4)).replace(command.replace(commandNoNumbers, ""), "")).replace("auto", "")).strip());
+					if (world instanceof Level _level)
+						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+				}
+				if (true) {
 					if (!world.isClientSide()) {
 						BlockPos _bp = BlockPos.containing(outputX, outputY, outputZ);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putString("receivedItem", (((command).strip().substring(4)).replace("" + new Object() {
-								double convert(String s) {
-									try {
-										return Double.parseDouble(s.trim());
-									} catch (Exception e) {
-									}
-									return 0;
-								}
-							}.convert((command).strip().replace("/get", "")), "")));
+							_blockEntity.getPersistentData().putBoolean("get", true);
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
-					if (true) {
+					if (command.contains("auto")) {
 						if (!world.isClientSide()) {
 							BlockPos _bp = BlockPos.containing(outputX, outputY, outputZ);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
-								_blockEntity.getPersistentData().putDouble("getItemCount", new Object() {
-									double convert(String s) {
-										try {
-											return Double.parseDouble(s.trim());
-										} catch (Exception e) {
-										}
-										return 0;
-									}
-								}.convert((command).strip().replace("/get", "")));
-							if (world instanceof Level _level)
-								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-						}
-						if (!world.isClientSide()) {
-							BlockPos _bp = BlockPos.containing(outputX, outputY, outputZ);
-							BlockEntity _blockEntity = world.getBlockEntity(_bp);
-							BlockState _bs = world.getBlockState(_bp);
-							if (_blockEntity != null)
-								_blockEntity.getPersistentData().putBoolean("get", true);
+								_blockEntity.getPersistentData().putBoolean("auto", true);
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
 						if (!world.isClientSide()) {
 							BlockPos _bp = BlockPos.containing(x, y, z);
+							BlockEntity _blockEntity = world.getBlockEntity(_bp);
+							BlockState _bs = world.getBlockState(_bp);
+							if (_blockEntity != null)
+								_blockEntity.getPersistentData().putString("lastCommand", "Done!");
+							if (world instanceof Level _level)
+								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+						}
+					} else {
+						if (!world.isClientSide()) {
+							BlockPos _bp = BlockPos.containing(outputX, outputY, outputZ);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
@@ -194,6 +186,15 @@ public class CommandHandlerProcedure {
 							world.getServer().getPlayerList().broadcastSystemMessage(Component.literal((outputX + " " + outputY + " " + outputZ)), false);
 						if (!world.isClientSide() && world.getServer() != null)
 							world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(commandNoNumbers), false);
+						if (!world.isClientSide() && world.getServer() != null)
+							world.getServer().getPlayerList().broadcastSystemMessage(Component.literal((new Object() {
+								public String getValue(LevelAccessor world, BlockPos pos, String tag) {
+									BlockEntity blockEntity = world.getBlockEntity(pos);
+									if (blockEntity != null)
+										return blockEntity.getPersistentData().getString(tag);
+									return "";
+								}
+							}.getValue(world, BlockPos.containing(outputX, outputY, outputZ), "receivedItem"))), false);
 					}
 				}
 			} else if (command.contains("config")) {

@@ -10,7 +10,7 @@
   "item.storage_upgrade.fluid_cell": "Fluid Cell",
   "item_group.storage_upgrade.storage_upgrade": "Storage Upgrade",
   "gui.storage_upgrade.storage_input_gui.label_input": "Input:",
-  "gui.storage_upgrade.display_gui.commandPrompt": "Write \"/help\" for help.",
+  "gui.storage_upgrade.display_gui.commandPrompt": "Type \"/help\" for help.",
   "gui.storage_upgrade.basic_storage_gui.label_nothing": "Nothing.",
   "gui.storage_upgrade.storage_input_gui.label_upgrades": "Upgrades:",
   "block.storage_upgrade.storage_input": "Storage Input",
