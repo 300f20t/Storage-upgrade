@@ -53,16 +53,16 @@
       "registry_name": "storage_input",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/storageupgrade/block/renderer/StorageInputTileRenderer.java",
+          "src/main/resources/assets/storage_upgrade/models/custom/storage_input_particle.json",
+          "src/main/java/net/mcreator/storageupgrade/block/display/StorageInputDisplayItem.java",
           "src/main/java/net/mcreator/storageupgrade/block/StorageInputBlock.java",
           "src/main/java/net/mcreator/storageupgrade/block/renderer/StorageInputDisplayItemRenderer.java",
-          "src/main/java/net/mcreator/storageupgrade/block/renderer/StorageInputTileRenderer.java",
           "src/main/java/net/mcreator/storageupgrade/block/model/StorageInputBlockModel.java",
-          "src/main/java/net/mcreator/storageupgrade/block/model/StorageInputDisplayModel.java",
           "src/main/java/net/mcreator/storageupgrade/block/entity/StorageInputTileEntity.java",
-          "src/main/resources/assets/storage_upgrade/models/item/storage_input.json",
-          "src/main/resources/assets/storage_upgrade/models/custom/storage_input_particle.json",
+          "src/main/java/net/mcreator/storageupgrade/block/model/StorageInputDisplayModel.java",
           "src/main/resources/assets/storage_upgrade/blockstates/storage_input.json",
-          "src/main/java/net/mcreator/storageupgrade/block/display/StorageInputDisplayItem.java"
+          "src/main/resources/assets/storage_upgrade/models/item/storage_input.json"
         ]
       }
     },
@@ -716,7 +716,7 @@
   "workspaceSettings": {
     "modid": "storage_upgrade",
     "modName": "Storage upgrade",
-    "version": "0.0.2_alpha",
+    "version": "0.0.3_alpha",
     "author": "300f20t, MCreator",
     "websiteURL": "https://mcreator.net",
     "license": "MIT License",
